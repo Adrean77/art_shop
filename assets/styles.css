@@ -1,0 +1,27 @@
+.zoom-img {
+  transition: transform 0.3s ease;
+  cursor: zoom-in;
+}
+
+.zoom-img:hover {
+  transform: scale(1.2);
+  z-index: 10;
+}
+        .card-img-top {
+            height: 250px;
+            object-fit: cover;
+        }
+  #delete-icon:hover i {
+    color: red;
+  }
+  #edit-icon:hover i {
+    color: blue;
+  }
+  .circle-img {
+  width: 30px;
+  border: 1px solid #ffffff; /* White border */
+  border-radius: 50%;         /* Makes it circular */
+  object-fit: cover;  
+  color: white;
+  margin-right: 5px;  
+}
