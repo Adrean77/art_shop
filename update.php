@@ -26,7 +26,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
   }
 
   if ($stmt->execute()) {
-    header("Location: index.html?updated=1");
+    header("Location: index.php?updated=1");
     exit();
   } else {
     echo "Error updating item.";

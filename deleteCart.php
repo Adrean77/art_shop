@@ -23,7 +23,7 @@ if (isset($_GET['id'])) {
 
     if ($stmt->execute()) {
 
-        header("Location: index.html");
+        header("Location: index.php");
         exit();
     }
 }

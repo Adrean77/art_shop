@@ -49,7 +49,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
   if ($stmt->execute()) {
     // Redirect back to gallery page
-    header("Location: index.html?success=1");
+    header("Location: index.php?success=1");
     exit();
   } else {
     echo "Error: " . $stmt->error;

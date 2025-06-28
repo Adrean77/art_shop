@@ -8,7 +8,7 @@ if (isset($_GET['id'])) {
     $stmt->bind_param("i", $id);
 
     if ($stmt->execute()) {
-        header("Location: index.html?deleted=1");
+        header("Location: index.php?deleted=1");
         exit();
     } else {
         echo "Error deleting item.";
