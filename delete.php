@@ -8,7 +8,7 @@ if (isset($_GET['id'])) {
     $stmt->bind_param("i", $id);
 
     if ($stmt->execute()) {
-        header("Location: index.php?deleted=1");
+        header("Location: index.html?deleted=1");
         exit();
     } else {
         echo "Error deleting item.";
@@ -21,5 +21,5 @@ if (isset($_GET['id'])) {
 ?>
 
 <?php if (isset($_GET['deleted'])): ?>
-  <div class="alert alert-success">Item deleted successfully.</div>
+    <div class="alert alert-success">Item deleted successfully.</div>
 <?php endif; ?>

@@ -9,7 +9,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt->bind_param("ii", $cid, $id);
 
     if ($stmt->execute()) {
-        header("Location: index.php");
+        header("Location: index.html");
         exit();
     }
 }
